@@ -1,0 +1,7 @@
+.body {
+    display: flex;
+    flex-grow: 1;
+    .chat_content {
+        flex-grow: 0.6;
+    }
+}
