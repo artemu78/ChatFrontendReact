@@ -1,6 +1,7 @@
 .App {
-  height: 100vh;
+  height: calc(100vh - 20px);
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
 
