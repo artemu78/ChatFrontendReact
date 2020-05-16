@@ -1,14 +1,24 @@
 import React from "react";
-
+import styles from "../search_style.js";
+import withStyles from "react-jss";
+const messages = {
+  typemessage: "Введите сообщение",
+};
 class Footer extends React.Component {
   render() {
+    const { classes } = this.props;
     return (
-      <div>
-        <input type="text"></input>
-        <input type="button" value="send" />
+      <div className={classes.container}>
+        <div className={classes.searchPair}>
+          <input
+            type="text"
+            className={classes.searchInput}
+            placeholder={messages.typemessage}
+          />
+        </div>
       </div>
     );
   }
 }
 
-export default Footer;
+export default withStyles(styles)(Footer);
