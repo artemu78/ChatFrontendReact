@@ -5,7 +5,6 @@ import SearchMember from './searchmember';
 const styles = {
     container: {
         borderLeft: '1px solid lightgrey',
-        paddingLeft: '5px',
         flexGrow: 0.3
     }
 }

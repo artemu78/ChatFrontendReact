@@ -1,12 +1,12 @@
 import React from 'react';
 import style from './style.module.scss';
 import Members from './members';
-
+import ChatList from './chatlist.jsx';
 
 function Body(props) {
     return (
     <div className={style.body}>
-        <div className={style.chat_content}>здесь чат</div>
+        <ChatList />
         <Members />
     </div>
 )
