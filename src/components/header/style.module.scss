@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    .name {
+        font-size: 26px;
+    }
+    .details {
+        color: grey;
+    }
+}
+
+.author {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    IMG {
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+}
