@@ -1,6 +1,9 @@
 import React from 'react';
 import withStyles from 'react-jss';
 import SearchMember from './searchmember';
+import compose from 'recompose/compose';
+import ListMembers from './listmembers'
+import { connect } from "react-redux";
 
 const styles = {
     container: {
@@ -14,8 +17,17 @@ class Members extends React.Component {
         const {classes} = this.props
         return <div className={classes.container}>
             <SearchMember />
+            <ListMembers />
         </div>
     }
 }
 
-export default withStyles(styles)(Members);
+const mapStateToProps = state => {
+    const { messages } = state;
+    return { messages };
+};
+
+export default compose(
+  withStyles(styles),
+  connect(mapStateToProps, null)
+)(Members);

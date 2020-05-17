@@ -4,17 +4,17 @@ const initialState = {
         {
             name: 'Brian Adams',
             id: 1,
-            avatar: ''
+            avatar: 'http://smartoboto.com/img/bots_logo/podcast-tim-robbins.jpg'
         },
         {
             name: 'Billy Ilish',
             id: 2,
-            avatar: ''
+            avatar: 'https://smartoboto.com/img/bots_logo/1588415943.jpeg'
         },
         {
             name: 'Stormy Daniels',
             id: 3,
-            avatar: ''
+            avatar: 'https://smartoboto.com/img/bots_logo/logo_santa.png'
         }
     ],
     messages: [
@@ -23,7 +23,8 @@ const initialState = {
             message: 'Привет, это первое сообщение в чате',
             author: {
                 id: 1,
-                name: 'Brian Adams'
+                name: 'Brian Adams',
+                avatar: 'http://smartoboto.com/img/bots_logo/podcast-tim-robbins.jpg'
             },
             date: '2020-05-16T15:30:00Z'
         },
@@ -32,7 +33,8 @@ const initialState = {
             message: 'Привет, это первое сообщение в чате',
             author: {
                 id: 1,
-                name: 'Brian Adams'
+                name: 'Brian Adams',
+                avatar: 'http://smartoboto.com/img/bots_logo/podcast-tim-robbins.jpg'
             },
             date: '2020-05-16T15:30:00Z'
         },
@@ -41,7 +43,8 @@ const initialState = {
             message: 'Привет, это первое сообщение в чате',
             author: {
                 id: 2,
-                name: 'Billi Ilish'
+                name: 'Billi Ilish',
+                avatar: 'https://smartoboto.com/img/bots_logo/1588415943.jpeg'
             },
             date: '2020-05-16T15:30:00Z'
         },
@@ -50,7 +53,8 @@ const initialState = {
             message: 'Привет, это первое сообщение в чате',
             author: {
                 id: 2,
-                name: 'Billi Ilish'
+                name: 'Billi Ilish',
+                avatar: 'https://smartoboto.com/img/bots_logo/1588415943.jpeg'
             },
             date: '2020-05-16T15:30:00Z'
         },
@@ -59,7 +63,8 @@ const initialState = {
             message: 'Привет, это первое сообщение в чате',
             author: {
                 id: 2,
-                name: 'Billi Ilish'
+                name: 'Billi Ilish',
+                avatar: 'https://smartoboto.com/img/bots_logo/1588415943.jpeg'
             },
             date: '2020-05-16T15:30:00Z'
         },
@@ -68,7 +73,8 @@ const initialState = {
             message: 'Привет, это первое сообщение в чате',
             author: {
                 id: 2,
-                name: 'Billi Ilish'
+                name: 'Billi Ilish',
+                avatar: 'https://smartoboto.com/img/bots_logo/1588415943.jpeg'
             },
             date: '2020-05-16T15:30:00Z'
         },
@@ -77,7 +83,8 @@ const initialState = {
             message: 'Привет, это первое сообщение в чате',
             author: {
                 id: 2,
-                name: 'Billi Ilish'
+                name: 'Billi Ilish',
+                avatar: 'https://smartoboto.com/img/bots_logo/1588415943.jpeg'
             },
             date: '2020-05-16T15:30:00Z'
         },
@@ -86,7 +93,8 @@ const initialState = {
             message: 'Привет, это первое сообщение в чате',
             author: {
                 id: 2,
-                name: 'Billi Ilish'
+                name: 'Billi Ilish',
+                avatar: 'https://smartoboto.com/img/bots_logo/1588415943.jpeg'
             },
             date: '2020-05-16T15:30:00Z'
         },
@@ -95,14 +103,16 @@ const initialState = {
             message: 'Привет, это первое сообщение в чате',
             author: {
                 id: 2,
-                name: 'Billi Ilish'
+                name: 'Billi Ilish',
+                avatar: 'https://smartoboto.com/img/bots_logo/1588415943.jpeg'
             },
             date: '2020-05-16T15:30:00Z'
         }
     ],
     author: {
         name: 'James Cook',
-        avatar: ''
+        avatar: 'https://smartoboto.com/img/bots_logo/logo_smart.png',
+        id: 434
     }
 }
 

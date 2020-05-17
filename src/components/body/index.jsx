@@ -1,15 +1,15 @@
-import React from 'react';
-import style from './style.module.scss';
-import Members from './members';
-import ChatList from './chatlist.jsx';
+import React from "react";
+import style from "./style.module.scss";
+import Members from "./members";
+import ChatList from "./chatlist.jsx";
 
 function Body(props) {
-    return (
+  return (
     <div className={style.body}>
-        <ChatList />
-        <Members />
+      <ChatList />
+      <Members />
     </div>
-)
+  );
 }
 
 export default Body;

@@ -28,12 +28,17 @@ function ChatMessage({ message }) {
   const datetime = formatDatetime(date);
   return (
     <div className={style.chat_message}>
-      {message.message}
-      <div className={style.details}>
-        <span className={style.message_author}>
-          {message.author && message.author.name}
-        </span>{" "}
-        <span className={style.message_date}>{datetime}</span>
+      <div>
+        <img src={message.author.avatar} width="50" height="50" alt="" />
+      </div>
+      <div>
+        {message.message}
+        <div className={style.details}>
+          <span className={style.message_author}>
+            {message.author && message.author.name}
+          </span>{" "}
+          <span className={style.message_date}>{datetime}</span>
+        </div>
       </div>
     </div>
   );
