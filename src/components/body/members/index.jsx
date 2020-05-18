@@ -8,7 +8,9 @@ import { connect } from "react-redux";
 const styles = {
     container: {
         borderLeft: '1px solid lightgrey',
-        flexGrow: 0.3,
+        flexGrow: 0,
+        flexShrink: 0,
+        flexBasis: '25%',
         overflowY: 'auto'
     }
 }

@@ -24,6 +24,7 @@ const initialState = {
     },
   ],
   messages: [],
+  filter_author_id: null,
   author: {
     name: "James Cook",
     avatar: "https://smartoboto.com/img/bots_logo/logo_smart.png",
@@ -59,6 +60,11 @@ export default function (state = initialState, action) {
         ...state,
         messages: state.messages.slice(-100),
       };
+    case types.FILTER_AUTHOR:
+      return { 
+        ...state,
+        filter_author_id: action.payload
+      }
     default:
       return state;
   }

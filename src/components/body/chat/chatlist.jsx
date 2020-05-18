@@ -44,15 +44,20 @@ function ChatMessage({ message }) {
   );
 }
 
-function Chatlist({ messages }) {
+const filterByAuthorId = (author_id) => (message) => {
+  return (author_id && message.author.id === author_id) || !author_id;
+};
+
+function Chatlist({ messages, filter_author_id }) {
   const ref = React.createRef();
+  const filterAuthor = filterByAuthorId(filter_author_id);
   useEffect(() => {
     ref.current.scrollTo(0, ref.current.scrollHeight);
   });
   return (
     <div className={style.chat_content} ref={ref}>
       <div>
-        {messages.map((message) => (
+        {messages.filter(filterAuthor).map((message) => (
           <ChatMessage message={message} key={message.id} />
         ))}
       </div>
@@ -61,7 +66,7 @@ function Chatlist({ messages }) {
 }
 
 function mapStateToProps(state) {
-  const { messages } = state;
-  return { messages };
+  const { messages, filter_author_id } = state;
+  return { messages, filter_author_id };
 }
 export default connect(mapStateToProps)(Chatlist);
