@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./style.module.scss";
-import Members from "./members";
-import ChatList from "./chatlist.jsx";
+import Members from "./members/index";
+import ChatList from "./chat/chatlist.jsx";
 
 function Body(props) {
   return (

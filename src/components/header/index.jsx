@@ -1,7 +1,36 @@
-import React from 'react';
+import React from "react";
+import { connect } from "react-redux";
+import style from "./style.module.scss";
 
-function Header(props) {
-    return (<h1>Чат волчат</h1>)
+const messages = {
+  chat_name: "Чат волчат",
+  chat_members: "Участников",
+};
+
+class Header extends React.Component {
+  render() {
+    const { members, author } = this.props;
+    return (
+      <div className={style.container}>
+        <div>
+          <div className={style.name}>{messages.chat_name}</div>
+          <div className={style.details}>
+            {messages.chat_members}: {members.length}
+          </div>
+        </div>
+        <div className={style.author}>
+          <div>
+            <img src={author.avatar} width="50" height="50" alt="" />
+          </div>
+          <div>{author.name}</div>
+        </div>
+      </div>
+    );
+  }
 }
 
-export default Header;
+function mapStateToProps(state) {
+  const { members, author } = state;
+  return { members, author };
+}
+export default connect(mapStateToProps)(Header);

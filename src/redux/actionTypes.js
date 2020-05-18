@@ -1,2 +1,4 @@
 export const ADD_MEMBER = "ADD_MEMBER";
 export const ADD_MESSAGE = "ADD_MESSAGE";
+export const ADD_MESSAGE_SERVER = "ADD_MESSAGE_SERVER";
+export default {ADD_MEMBER, ADD_MESSAGE, ADD_MESSAGE_SERVER}

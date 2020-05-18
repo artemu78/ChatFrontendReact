@@ -7,17 +7,9 @@
         position: relative;
         padding: 15px;
         overflow-y: auto;
-    }
-    .chat_background {
-        background-color: #e5ddd5;
-        background-image: url(https://web.whatsapp.com/img/bg-chat-tile_9e8a2898faedb7db9bf5638405cf81ae.png);
-        background-repeat: repeat;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        opacity: .06;
+        background-color: #f5ede5;
+        // background-image: url(https://web.whatsapp.com/img/bg-chat-tile_9e8a2898faedb7db9bf5638405cf81ae.png);
+        // background-repeat: repeat;
     }
     .chat_message {
         background-color: white;

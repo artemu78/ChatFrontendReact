@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import style from "./style.module.scss";
+import style from "../style.module.scss";
 
 function formatDatetime(d) {
   const current = new Date();
@@ -45,9 +45,12 @@ function ChatMessage({ message }) {
 }
 
 function Chatlist({ messages }) {
+  const ref = React.createRef();
+  useEffect(() => {
+    ref.current.scrollTo(0, ref.current.scrollHeight);
+  });
   return (
-    <div className={style.chat_content}>
-      <div className={style.chat_background} />
+    <div className={style.chat_content} ref={ref}>
       <div>
         {messages.map((message) => (
           <ChatMessage message={message} key={message.id} />

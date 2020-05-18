@@ -1,9 +1,11 @@
 import React from 'react';
+import Member from './member';
 
 class ListMembers extends React.Component {
     render() {
+        const { members } = this.props;
         return <div>
-список членов
+            {members.map(member => <Member member={member} key={member.id}/> )}
         </div>
     }
 }
